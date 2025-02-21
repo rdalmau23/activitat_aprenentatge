@@ -62,7 +62,7 @@ class Tasca {
     }
   
     mostrarInfoTasca() {
-      return `${super.mostrarInfoTasca()}, Data Límit: ${this.#dataLimit}, Descripció: ${this.#descripcio}`;
+      return `${super.mostrarInfoTasca()}, Data Limit: ${this.#dataLimit}, Descripció: ${this.#descripcio}`;
     }
   }
   
@@ -110,9 +110,9 @@ class Tasca {
       const tasca = this.#tasques.find(t => t.id === id);
       if (tasca) {
         tasca.nom = nouNom;
-        console.log(`Tasca amb id ${id} modificada.`);
+        console.log(`Tasca amb id ${id} i amb nom ${nouNom} modificada.`);
       } else {
-        console.log(`Tasca amb id ${id} no trobada.`);
+        console.log(`Tasca amb id ${id} i amb nom ${nouNom} no trobada.`);
       }
       this.actualitzarLlista();
     }
